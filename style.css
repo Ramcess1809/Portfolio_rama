@@ -1,0 +1,690 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(147deg, transparent 0%, transparent 8%,rgba(63, 106, 202,0.08) 8%, rgba(63, 106, 202,0.08) 46%,transparent 46%, transparent 100%),linear-gradient(107deg, transparent 0%, transparent 21%,rgba(63, 106, 202,0.08) 21%, rgba(63, 106, 202,0.08) 53%,transparent 53%, transparent 100%),linear-gradient(288deg, transparent 0%, transparent 35%,rgba(63, 106, 202,0.08) 35%, rgba(63, 106, 202,0.08) 91%,transparent 91%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+header {
+    background-color: #0d47a1; /* un bleu plus foncé pour le contraste */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* texte blanc pour contraster avec le bleu foncé */
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+}
+
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: #f0f0f0; /* Couleur de fond choisie */
+  }
+  
+  .intro-text {
+    max-width: 50%; /* ou la largeur que vous préférez */
+    display: flex; /* Ajout pour utiliser Flexbox */
+    flex-direction: column; /* Stack les éléments verticalement */
+   /* justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte dans la division */
+  }
+  
+  .intro-img img {
+    border-radius: 50%; /* Pour rendre l'image ronde */
+    width: 200px; /* ou la taille que vous préférez */
+    height: auto; /* pour maintenir le rapport hauteur/largeur de l'image */
+  }
+
+
+
+
+ 
+  
+  #About h1, #About h2 {
+    text-align: center; /* Centre le texte des titres */
+    width: 100%; /* Permet au texte de s'étendre sur toute la largeur */
+    margin-top: 20px; /* Espacement au-dessus du titre */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+  }
+  
+
+
+  #Formation_Cursus {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement les éléments enfants */
+    justify-content: center; /* Centre verticalement les éléments enfants */
+    min-height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
+    
+   
+}
+
+#Formation_Cursus > h1 {
+    width: 100%; /* Permet au titre de s'étendre sur toute la largeur */
+    margin-top: 20px; /* Espacement au-dessus du titre, ajustez selon vos besoins */
+    margin-bottom: 20px; /* Espacement en dessous du titre, ajustez selon vos besoins */
+    Text-align: center; /* Centre le texte */
+  
+  }
+  
+  #Skills {
+    display: flex; /* Active Flexbox pour la section */
+    flex-direction: column; /* Organise les éléments enfants en colonne */
+    align-items: center; /* Centre les éléments enfants horizontalement */
+    justify-content: flex-start; /* Alignement vertical au début de la section */
+    text-align: center; /* Assure que le texte à l'intérieur du titre est centré */
+    min-height: 100vh; /* Optionnel : Assure que la section est au moins aussi haute que la fenêtre de visualisation */
+  }
+  
+  #Skills > h1 {
+    width: 100%; /* Permet au titre de s'étendre sur toute la largeur */
+    margin-top: 20px; /* Espacement au-dessus du titre, ajustez selon vos besoins */
+    margin-bottom: 20px; /* Espacement en dessous du titre, ajustez selon vos besoins */
+    Text-align: center; /* Centre le texte */
+  
+  }
+ 
+  .networking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .networking-section .text {
+    flex: 1;
+    /* Ajoutez ici du style supplémentaire pour le texte si nécessaire */
+  }
+  
+  .networking-section .images {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .networking-section .images img {
+    max-width: 100%; /* Ajustez selon la taille désirée */
+    height: auto; /* Garde le ratio de l'image */
+    display: block; /* Pour que chaque image prenne sa propre ligne */
+    margin: 0 auto; /* Centrer les images dans leur conteneur */
+  }
+  
+
+
+  .python-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.python-section .text {
+    width: 60%; /* Ajustez en fonction de la largeur souhaitée pour le texte */
+    
+    
+}
+.python-section .image-container {
+    width: 40%; /* Ajustez en fonction de la largeur souhaitée pour l'image */
+    text-align: center; /* Centrer l'image dans le conteneur */
+}
+
+.python-section .image-container img {
+    max-width: 50%; /* Ajustez en fonction de la taille souhaitée pour l'image */
+    height: auto; /* Pour maintenir l'aspect ratio de l'image */
+}
+
+  
+.html-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.html-section .text {
+    width: 60%; /* Ou une autre largeur selon vos besoins */
+}
+
+.html-section .image-container {
+    width: 40%; /* Ou une autre largeur selon vos besoins */
+    text-align: center; /* Centrer l'image dans le conteneur */
+}
+
+.html-section .image-container img {
+    max-width: 100%; /* Ajuster selon la taille souhaitée de l'image */
+    height: auto; /* Pour maintenir le rapport hauteur/largeur de l'image */
+}
+
+  
+
+
+
+.java-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.java-section .text {
+    width: 60%; /* Adjust to your preference */
+}
+
+.java-section .image-container {
+    width: 40%; /* Adjust to your preference */
+    text-align: center; /* Centers the image horizontally */
+}
+
+.java-section .image-container img {
+    max-width: 50%; /* Adjust to your preference */
+    height: auto; /* Maintains aspect ratio */
+}
+
+  .php-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.php-section .text {
+    width: 70%; /* Adjust to your preference */
+}
+
+.php-section .image-container {
+    width: 40%; /* Adjust to your preference */
+    text-align: center; /* Centers the image horizontally */
+}
+
+.php-section .image-container img {
+    max-width: 100%; /* Adjust to your preference */
+    height: auto; /* Maintains aspect ratio */
+}
+
+  
+  
+  .tableau-style {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Ajoutez de l'espace sous le tableau si nécessaire */
+}
+
+.pentesting-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Ajustez l'espacement comme nécessaire */
+}
+
+.pentesting-section .text {
+    width: 60%; /* Ajustez selon la largeur souhaitée pour le texte */
+}
+
+.pentesting-section .image-container {
+    width: 40%; /* Ajustez selon la largeur souhaitée pour l'image */
+    text-align: center; /* Centre l'image horizontalement */
+}
+
+.pentesting-section .image-container img {
+    max-width: 100%; /* Ajustez selon la taille désirée pour l'image */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+.capture-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capture-section .text {
+    width: 60%; /* Ajustez selon vos préférences */
+}
+
+.capture-section .image-container {
+    width: 40%; /* Ajustez selon vos préférences */
+    text-align: center; /* Centre l'image horizontalement dans son conteneur */
+}
+
+.capture-section .image-container img {
+    max-width: 100%; /* Ajustez selon les besoins de la taille de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+}
+#Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Assure que le texte à l'intérieur est également centré */
+}
+
+#Projects .content-center {
+    max-width: 800px; /* Ou la largeur que vous préférez */
+}
+
+#Projects h1, #Projects p {
+    margin: 0; /* Retire les marges par défaut pour un meilleur contrôle */
+    padding: 10px 0; /* Ajoute un peu d'espacement vertical */
+}
+
+.programming-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Pour aligner les éléments en haut */
+    margin-bottom: 20px; /* Espacement en bas de la section */
+}
+
+
+.programming-project .text-content {
+    width: 60%; /* Largeur du contenu textuel */
+}
+
+.programming-project .image-content {
+    width: 40%; /* Largeur de la section de l'image */
+    text-align: center; /* Centre l'image dans son conteneur */
+}
+
+.programming-project .image-content img {
+    max-width: 100%; /* Pour que l'image ne dépasse pas son conteneur */
+    height: auto; /* Pour maintenir le ratio de l'image */
+}
+
+.telecom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ajuste l'alignement vertical au début des éléments */
+}
+
+.telecom-section .text-content {
+    width: 60%; /* Ajuste la largeur du contenu textuel */
+}
+
+.telecom-section .image-content {
+    width: 40%; /* Ajuste la largeur du conteneur d'images */
+    text-align: center; /* Centre les images dans leur conteneur */
+}
+
+.telecom-section .image-content img {
+    max-width: 100%; /* Les images ne dépasseront pas leur conteneur */
+    height: auto; /* Pour maintenir l'aspect ratio des images */
+    margin-top: 10px; /* Espacement entre les images si nécessaire */
+}
+
+#Misc .activity-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Pour aligner les éléments au début de leur conteneur */
+    margin-bottom: 20px; /* Espacement entre les sections */
+}
+
+#Misc .text-content {
+    width: 60%; /* Largeur du texte */
+}
+
+#Misc .image-content {
+    width: 40%; /* Largeur des images */
+    text-align: center; /* Centre les images */
+}
+
+#Misc .image-content img {
+    max-width: 100%; /* Les images ne dépassent pas leur conteneur */
+    height: auto; /* Conserve le ratio hauteur/largeur */
+    margin-top: 10px; /* Espacement au-dessus des images si nécessaire */
+}
+
+#Misc h1, #Misc .text-content h2 {
+    text-align: center; /* Centre le texte des titres */
+    width: 100%; /* S'étend sur toute la largeur du conteneur */
+    margin: 0 auto; /* Ajoute automatiquement des marges égales sur les côtés gauche et droit */
+}
+
+/* Si nécessaire, ajoutez un style pour la section .activity-section */
+#Misc .activity-section {
+    /* Styles pour les sections d'activité */
+}
+
+#Misc .text-content, #Misc .image-content {
+    /* Styles existants pour le texte et les images */
+}
+
+#Misc .text-content {
+    /* Assurez-vous que cela n'affecte pas le centrage des titres */
+    text-align: left; /* Aligner le texte des paragraphes à gauche */
+}
+
+#Misc .image-content img {
+    /* Styles existants pour les images */
+}
+
+
+
+.tableau-style th, .tableau-style td {
+    text-align: left;
+    border: 1px solid #aaa; /* Bordures grises pour les cellules */
+}
+
+/* Style des en-têtes de tableau */
+.tableau-style th {
+    background-color: #3333ff; /* Couleur de fond des en-têtes */
+    color: white;
+    padding: 10px;
+}
+
+/* Style des cellules de corps de tableau */
+.tableau-style td {
+    background-color: #f0f0f0; /* Couleur de fond pour les cellules normales */
+    padding: 10px;
+}
+
+/* Pour créer l'effet de diagonale dans les cellules */
+.tableau-style td::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, transparent 50%, #ddd 50%);
+    z-index: -1;
+    pointer-events: none; /* permet de cliquer sur la cellule même avec la pseudo-élément par-dessus */
+}
+
+.tableau-style td, .tableau-style th {
+    position: relative; /* nécessaire pour la position absolue des pseudo-éléments */
+}
+
+/* Vous pourriez avoir besoin de retirer l'effet de diagonale sur mobile si les cellules deviennent trop petites */
+@media (max-width: 600px) {
+    .tableau-style td::before {
+        background: none;
+    }
+}
+
+
+
+
+
+
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+
+p .grand{
+    font-size: 35px;
+}
+p{
+    font-size: 30px;
+}
+
+
+.skill .name{
+    display: flex;
+    flex-direction: column;
+    color:#6d7587 ;
+    font-size: 2em;
+    font-weight: 400;
+   margin-right: 40px;
+}
+.skill{
+    display: flex;
+}
+
+
+.skill .name span{
+    
+    margin: 15px 0;
+    box-shadow:  5px 5px 8px #D9DADE, -5px -5px 8px #FFFFFF;
+    
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    border: 5px solid #ebecf0;
+    cursor: pointer;
+}
+.skill .name span:hover{
+ box-shadow:  5px 5px 8px #D9DADE,-5px -5px 8px #FFFFFF, 
+   inset 5px 5px 8px #d9dade, inset -5px -5px 8px #FFFFFF;
+}
+
+
+ .bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+ .bar {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 8px #D9DADE, inset -5px -5px 8px #FFFFFF;
+
+ }
+ .bar .progress{
+    height: 100%;
+    
+    background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+    border-radius: 20px;
+ }
+ 
+ .bar:nth-child(1) .progress {
+    width: 70%;
+
+ } 
+ .bar:nth-child(2) .progress {
+    width:80%
+} 
+    .bar:nth-child(3) .progress {
+        width: 80%} 
+        
+       
+        .bar:nth-child(4) .progress {
+            width: 80%
+
+        }   
+
+        .bar:nth-child(5) .progress {
+            width: 70%
+
+        }  
+        
+        .bar:nth-child(6) .progress {
+            width: 75%
+
+        }   
+       
+       
+       
+
+
+
+
+        .skull .nom{
+            display: flex;
+            flex-direction: column;
+            color:#6d7587 ;
+            font-size: 2em;
+            font-weight: 400;
+           margin-right: 40px;
+        }
+        .skull{
+            display: flex;
+        }
+        
+        
+        .skull .nom span{
+            
+            margin: 15px 0;
+            box-shadow:  5px 5px 8px #D9DADE, -5px -5px 8px #FFFFFF;
+            
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 50px;
+            border: 5px solid #ebecf0;
+            cursor: pointer;
+        }
+        .skull .nom span:hover{
+         box-shadow:  5px 5px 8px #D9DADE,-5px -5px 8px #FFFFFF, 
+           inset 5px 5px 8px #d9dade, inset -5px -5px 8px #FFFFFF;
+        }
+        
+        
+         .bur-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+         .bur {
+            width: 400px;
+            height: 30px;
+            border-radius: 20px;
+            box-shadow: inset 5px 5px 8px #D9DADE, inset -5px -5px 8px #FFFFFF;
+        
+         }
+         .bur .progresse{
+            height: 100%;
+            
+            background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+            border-radius: 20px;
+         }
+         
+         .bur:nth-child(1) .progresse {
+            width: 70%;
+        
+         } 
+         .bur:nth-child(2) .progresse {
+            width: 50%
+        } 
+            .bur:nth-child(3) .progresse {
+                width: 40%} 
+
+                .bur:nth-child(4) .progresse {
+                    width: 40%} 
+
+
+
+
+   .tableau-style {
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border: 2px solid blue
+
+   } 
+   thead tr{
+    background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+color: #ffffff;
+text-align: left;
+
+
+   }  
+   th, td{
+    padding: 45px 50px;
+   } 
+     tbody tr, td, th{
+        border: 1px solid blue;
+     } 
+.or{
+    font-size: 40px;
+}
+.om{
+font-size: 30px;
+}
+
+
+
+ div .haut{
+    background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+    text-align: center;
+    padding: 20px;
+    width: 85px;
+    height: 20px;
+    
+       
+}
+
+
+.bu{
+        font-size: 20px;
+        color: aliceblue;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.district{
+    height: 250px;
+    
+}
+
+
+.dimi{
+    width: 500px;
+}
+
+#Contact .contact-container {
+    text-align: center; /* Centre le texte dans le conteneur */
+    margin: auto; /* Centrage horizontal du conteneur */
+    width: 100%; /* Utilisez une largeur spécifique si vous voulez restreindre la largeur du conteneur */
+}
+
+#Contact h2, #Contact p {
+    margin: 0 0 10px 0; /* Ajoute un peu d'espace en dessous de chaque élément */
+}
+
+#CV .contact-container {
+    text-align: center; /* Centre le texte dans le conteneur */
+    margin: auto; /* Centrage horizontal du conteneur */
+    width: 100%; /* Utilisez une largeur spécifique si vous voulez restreindre la largeur du conteneur */
+}
+#CV h2, #CV p p {
+    margin: 0 0 10px 0; /* Ajoute un peu d'espace en dessous de chaque élément */
+}
+
+
+footer{
+    
+    background-image: radial-gradient(circle at 52% 33%, rgba(17, 17, 17,0.08) 0%, rgba(17, 17, 17,0.08) 33.333%,rgba(74, 74, 74,0.08) 33.333%, rgba(74, 74, 74,0.08) 66.666%,rgba(130, 130, 130,0.08) 66.666%, rgba(130, 130, 130,0.08) 99.999%),radial-gradient(circle at 70% 65%, rgba(129, 129, 129,0.08) 0%, rgba(129, 129, 129,0.08) 33.333%,rgba(95, 95, 95,0.08) 33.333%, rgba(95, 95, 95,0.08) 66.666%,rgba(60, 60, 60,0.08) 66.666%, rgba(60, 60, 60,0.08) 99.999%),radial-gradient(circle at 97% 89%, rgba(21, 21, 21,0.08) 0%, rgba(21, 21, 21,0.08) 33.333%,rgba(89, 89, 89,0.08) 33.333%, rgba(89, 89, 89,0.08) 66.666%,rgba(156, 156, 156,0.08) 66.666%, rgba(156, 156, 156,0.08) 99.999%),linear-gradient(0deg, rgb(17, 9, 206),rgb(65, 75, 237));
+    padding: 50px;
+    margin: 0px;
+    color: aliceblue;
+      font-size: 20px
+     
+    
+    
+}
+
+  
